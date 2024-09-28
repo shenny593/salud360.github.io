@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#monitoring-section {
+    padding: 30px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #004aad;
+}
+
+.consulta-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#uploadForm {
+    margin-top: 30px;
+}
+
+#uploadForm input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#uploadForm button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadForm button:hover {
+    background-color: #218838;
+}
+
+#uploadMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}

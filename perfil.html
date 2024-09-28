@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Paciente - Telemedicina Salud 360</title>
+    <link rel="stylesheet" href="styles-perfil.css">
+    <script src="scripts-perfil.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Telemedicina Salud 360</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil del Paciente</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="logout.html" class="logout-btn">Cerrar Sesión</a></li> <!-- Botón para cerrar sesión -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <div class="profile-container">
+            <img src="profile-pic.png" alt="Foto del Paciente" class="profile-pic">
+            <h2>Bienvenido, [Nombre del Paciente]</h2> <!-- Mostrar el nombre del paciente -->
+            <p><strong>Email:</strong> paciente@example.com</p>
+            <p><strong>Condición Médica:</strong> Diabetes Tipo 2</p>
+            <p><strong>Último Monitoreo:</strong> 15 de septiembre de 2024</p>
+
+            <div class="profile-actions">
+                <button onclick="window.location.href='medicos.html'">Ver Informes Médicos</button>
+                <button onclick="window.location.href='monitoreo.html'">Ver Monitoreo de Salud</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Telemedicina Salud 360 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

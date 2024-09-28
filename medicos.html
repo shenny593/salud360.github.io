@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos - Telemedicina Salud 360</title>
+    <link rel="stylesheet" href="styles-medicos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Telemedicina Salud 360</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil del Paciente</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="logout.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="doctors-section">
+        <h3>Médicos que te están atendiendo</h3>
+
+        <!-- Buscador -->
+        <div id="search-doctor">
+            <label for="search">Buscar médico por especialidad:</label>
+            <input type="text" id="search" onkeyup="filterDoctors()" placeholder="Buscar especialidad...">
+        </div>
+
+        <!-- Lista de médicos -->
+        <div id="doctor-list">
+            <!-- Perfiles de médicos generados dinámicamente -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Telemedicina Salud 360 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts-medicos.js"></script>
+</body>
+</html>

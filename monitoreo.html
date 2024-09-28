@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Salud - Telemedicina Salud 360</title>
+    <link rel="stylesheet" href="styles-monitoreo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Telemedicina Salud 360</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil del Paciente</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="logout.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="monitoring-section">
+        <h2>Monitoreo de Salud</h2>
+        <p>Aquí podrás revisar el historial de tus consultas, subir estudios y revisar las resoluciones de los doctores.</p>
+
+        <!-- Historial de consultas -->
+        <h3>Historial de Consultas</h3>
+        <div id="consulta-list">
+            <div class="consulta-item">
+                <p><strong>Fecha de Consulta:</strong> 10 de septiembre de 2024</p>
+                <p><strong>Doctor:</strong> Dr. Carlos Martínez (Endocrinólogo)</p>
+                <p><strong>Resumen:</strong> Ajuste de dosis de insulina. Se pidió un estudio de glucosa.</p>
+                <p><strong>Resolución del Doctor:</strong> Monitorizar la glucosa y ajustar la dieta. Revisión en un mes.</p>
+            </div>
+
+            <div class="consulta-item">
+                <p><strong>Fecha de Consulta:</strong> 1 de agosto de 2024</p>
+                <p><strong>Doctor:</strong> Dra. Ana Pérez (Cardióloga)</p>
+                <p><strong>Resumen:</strong> Revisión de presión arterial. Se pidió un electrocardiograma.</p>
+                <p><strong>Resolución del Doctor:</strong> Mantener la medicación actual y realizar actividad física moderada.</p>
+            </div>
+        </div>
+
+        <!-- Subir estudios -->
+        <h3>Subir Estudios Solicitados</h3>
+        <form id="uploadForm">
+            <label for="study">Seleccionar archivo de estudio:</label>
+            <input type="file" id="study" name="study" required>
+            <button type="submit">Subir Estudio</button>
+        </form>
+
+        <p id="uploadMessage" style="display:none;"
